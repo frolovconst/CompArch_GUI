@@ -1,0 +1,9 @@
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\bin\Debug\CompArch_GUI.exe.config
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\obj\Debug\CompArch_GUI.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\obj\Debug\CompArch_GUI.Form1.resources
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\obj\Debug\CompArch_GUI.Properties.Resources.resources
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\obj\Debug\CompArch_GUI.csproj.GenerateResource.Cache
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\bin\Debug\CompArch_GUI.exe
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\bin\Debug\CompArch_GUI.pdb
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\obj\Debug\CompArch_GUI.exe
+C:\Users\Konstantin\Code\VS\CompArch_GUI\CompArch_GUI\obj\Debug\CompArch_GUI.pdb
