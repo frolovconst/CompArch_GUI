@@ -21,7 +21,7 @@ namespace CompArch_GUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            hexViewer.Items.Add("");
         }
 
         private void monitorVM_Click(object sender, EventArgs e)
@@ -77,6 +77,57 @@ namespace CompArch_GUI
             monitorVM.Image = monitorPicture;
             infoByte = (byte)(~infoByte);
             //infoByte = (byte)(infoByte << 1);
+        }
+
+        private void hexViewerAddrBox_TextChanged(object sender, EventArgs e)
+        {
+            //hexViewerAddrBox.Text = hexViewerAddrBox.MaximumSize.Height.ToString();
+        }
+
+        private void hexViewerAddrBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            byte inByte;
+            if (e.KeyChar == '\r')
+            {
+                //hexViewer.Text[0] = "ss";
+                //hexViewer.Items.Add("dd");
+                inByte = Byte.Parse(hexViewerAddrBox.Text);
+                addItemsToListBox(hexViewer, ByteToHex(inByte));
+                hexViewerAddrBox.Text = "";
+            }
+            //hexViewer.Items[0] = hexViewer.Items.Count;
+        }
+
+        private void addItemsToListBox(ListBox lBox, String item)
+        {
+            int maxItems = 7;
+            if(lBox.Items.Count < maxItems)
+            {
+                lBox.Items.Add("");
+                for (int i = lBox.Items.Count-1; i > 0; i--)
+                {
+                    
+                    lBox.Items[i] = lBox.Items[i - 1];
+                }
+                lBox.Items[0] = item;
+
+            }
+            else
+            {
+                for (int i = maxItems - 1; i > 0; i--) 
+                {
+                    lBox.Items[i] = lBox.Items[i-1];
+                }
+                lBox.Items[0] = item;
+            }
+        }
+
+        private String ByteToHex(byte inByte)
+        {
+            String result = "0x";
+            
+            //result = String.Format("%02X", inByte);
+            return result + inByte.ToString("X2");
         }
     }
 }
